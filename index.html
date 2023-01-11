@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Library Application</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-heading">
+            <h1>Your Library</h1>
+        </div>
+        <div class="book-heading">
+            <h1>Current books</h1>
+        </div>
+        
+        <div class="form">
+            <!--This allows the button to be called in JS and take all of the info, then
+            run run the displayForm() script in JS.-->
+            <button class="addBookButton">Click to add a book</button>
+            <div id="addBookForm" style="display:none">
+                <form id="addBook">
+                <center>
+                    <label for="title">Title</label>
+                    <input type="text" id="title" required>
+
+                    <label for="author">Author</label>
+                    <input type="text" id="author" required>
+
+                    <label for="page">Pages</label>
+                    <input type="number" id="page" required>
+
+                    <label for="read">Read</label>
+                    <select name="read" id="read">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                </center>
+                </form>
+                <button type="submit" class="submitButton">+ to Library</button>
+                <button type="reset" class="reset-button">Reset form</button>
+            </div>
+        </div>
+        <div class="books">
+
+        </div>
+    </div>
+
+
+    <script src="javascript.js">
+
+    </script>
+</body>
+
+</html>
